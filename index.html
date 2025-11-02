@@ -1,10 +1,137 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="UX/UI designer crafting intuitive, visually engaging experiences with a user-centered mindset."
+    />
+    <title>Petra Soininen - Portfolio</title>
+    <link rel="stylesheet" href="./src/fonts.css" />
+    <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/tokens.css" />
+    <link rel="stylesheet" href="/src/nav.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      rel="preload"
+      href="./assets/taara-preview.webp"
+      as="image"
+      fetchpriority="high"
+    />
   </head>
   <body>
-    testi
+    <nav>
+      <a aria-label="frontpage" href="/#">
+        <img src="/assets/logo.svg" alt="logo" />
+      </a>
+      <a href="/#selected-work" class="x-large">Work</a>
+      <a href="/#about" class="x-large">About</a>
+      <a href="/#contact" class="x-large">Contact</a>
+    </nav>
+    <header>
+      <h1>Petra Soininen</h1>
+      <p>
+        UX/UI designer crafting intuitive, visually engaging experiences with a
+        user-centered mindset.
+      </p>
+    </header>
+    <main>
+      <section id="selected-work">
+        <h2>Selected work</h2>
+        <a href="./projects/taara.html" class="project-preview">
+          <img src="./assets/taara-preview.webp" alt="taara preview" />
+          <section>
+            <div class="tags">
+              <div class="tag small">Course project</div>
+            </div>
+            <h3>Taara mobility-app</h3>
+            <p class="regular">
+              A break exercise app for Taara mobility Oy, that helps you stay
+              active and support your well-being
+            </p>
+          </section>
+        </a>
+        <a href="./projects/smarthome.html" class="project-preview">
+          <img src="./assets/smarthome-preview.webp" alt="smarthome preview" />
+          <section>
+            <div class="tags">
+              <div class="tag small">Course project</div>
+              <div class="tag small">NDA</div>
+            </div>
+            <h3>Smarthome app</h3>
+            <p class="regular">
+              Smarthome app for controlling your home and monitoring real-time
+              home data
+            </p>
+          </section>
+        </a>
+        <a href="./projects/omawatti.html" class="project-preview">
+          <img src="./assets/omawatti-preview.webp" alt="omawatti preview" />
+          <section>
+            <div class="tags">
+              <div class="tag small">Course project</div>
+            </div>
+            <h3>OmaWatti redesign</h3>
+            <p class="regular">
+              Website redesign of Lahti Energia’s customers' electricity
+              monitoring service
+            </p>
+          </section>
+        </a>
+      </section>
+      <section id="about">
+        <h2>About me</h2>
+        <img src="./assets/profile-picture.webp" alt="profile picture" />
+        <p class="regular">
+          I’m Petra, a detail-oriented and empathetic UX/UI designer passionate
+          about creating user-centered, clear, and visually appealing digital
+          solutions. With a background in customer service, I have developed a
+          strong ability to understand user needs and solve challenges
+          efficiently. Driven by curiosity, continuous learning, and the desire
+          to create meaningful experiences, I aim to design solutions that make
+          people’s everyday lives easier and more enjoyable. <br /><br />
+          In addition to UX/UI design, I’ve studied digital marketing, project
+          management, and Lean methodology, which have given me a holistic
+          understanding of user-centered design, efficient workflows, and
+          business-oriented service development.<br /><br />
+          I value smooth collaboration, but I’m also highly self-driven and
+          organized, ensuring that projects progress efficiently from idea to
+          execution. My goal is to craft designs that not only look beautiful
+          but also bring real value to users. <br /><br />
+          I’m looking for opportunities to grow, work on meaningful projects,
+          and create better user experiences. If you need an organized and
+          motivated designer on your team, let’s connect!
+        </p>
+      </section>
+    </main>
+    <footer id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p class="regular">
+          If you’d like to chat about design, collaboration or new projects,
+          feel free to reach out – I’d love to connect!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:soininenpetra@gmail.com" class="regular">
+            <img alt="" src="./assets/email.svg" width="32px" height="32px" />
+            soininenpetra@gmail.com
+          </a>
+          <a
+            href="https://fi.linkedin.com/in/petra-soininen-203500250"
+            rel="noreferrer"
+            class="regular"
+          >
+            <img
+              alt=""
+              src="./assets/linkedin.svg"
+              width="32px"
+              height="32px"
+            />
+            Petra Soininen
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
