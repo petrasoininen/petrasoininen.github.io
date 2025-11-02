@@ -1,0 +1,27 @@
+#prototype-link {
+  display: flex;
+  padding: 0 24px;
+  justify-self: center;
+  align-self: start;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  background: var(--tertiary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 18px */
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  &:hover {
+    background-color: var(--tertiary-light);
+  }
+  @media (min-width: 768px) {
+    width: 422px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 16px;
+    height: 49px;
+  }
+}

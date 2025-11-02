@@ -1,0 +1,28 @@
+#sidebar {
+  position: sticky;
+  top: 132px;
+  margin-top: -24px;
+  display: none;
+  a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 30px */
+    transition: all 0.3s ease;
+    &:hover:not(.active) {
+      color: var(--tertiary);
+    }
+  }
+  a.active {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 48px */
+  }
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: fit-content;
+  }
+}
